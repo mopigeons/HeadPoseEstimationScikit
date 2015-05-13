@@ -1,7 +1,16 @@
 __author__ = 'Simon'
 
-def loadDepthImage(p_filename):
+
+def loaddepthimage(p_filename):
+    imgfile = open(p_filename, 'r')
+    text = imgfile.read()
+    print(text)
     return 1
 
-def loadLabels(p_filename):
+
+def loadlabels(p_filename):
     return 1
+
+
+def add(x, y):
+    return x+y
