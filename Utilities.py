@@ -10,7 +10,3 @@ def loaddepthimage(p_filename):
 
 def loadlabels(p_filename):
     return 1
-
-
-def add(x, y):
-    return x+y
