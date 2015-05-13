@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestRegressor
 # establish training data points (X) and their labels (Y)
 # --------------------------------------------------------
 # The current data is dummy data and needs to be replaced
-# --------------------------------------------------------"
+# --------------------------------------------------------
 X = [[0, 1, 0, 0, 0], [1, 1, 0, 0, 1], [0, 0, 1, 1, 1], [1, 0, 1, 1, 0], [0, 1, 0, 0, 1], [1, 0, 1, 0, 0],
      [1, 1, 1, 0, 1], [0, 1, 1, 0, 1]]
 Y = [0, 1, 1, 0, 1, 0, 1, 1]
