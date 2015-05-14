@@ -5,8 +5,7 @@ import numpy as np
 
 
 def main():
-    img = loaddepthimage("frame_00003_depth.bin")
-    print(img)
+    print(loadlabels('frame_00003_pose.bin'))
 
 
 if __name__ == "__main__":

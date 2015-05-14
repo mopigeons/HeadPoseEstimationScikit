@@ -1,6 +1,13 @@
 __author__ = 'Simon'
 
+'''
+the following code is adapted from Fanelli et al
+retrieved May 2015, available at
+http://www.vision.ee.ethz.ch/~gfanelli/head_pose/head_forest.html
+'''
+
 import numpy as np
+import struct
 
 
 # loads a depth image and returns it in matrix form.
@@ -37,6 +44,12 @@ def loaddepthimage(p_filename):
     return depth_img
 
 
-
+# loads the ground truth labels
+# returns an array containing the ground truths
 def loadlabels(p_filename):
-    return 1
+    with open(p_filename, "rb") as f:
+        labels = np.zeros([6])
+        for i in range(0,6):
+            data = f.read(4)
+            labels[i] = struct.unpack('f', data)[0]
+    return labels
